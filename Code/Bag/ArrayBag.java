@@ -1,8 +1,8 @@
 public final class ArrayBag<T> implements BagInterface<T> {
   private static final int MAX_CAPACITY = 1000;
   private static final int DEFAULT_CAPACITY = 10;
-  final private T[] bag;
-  private int size;
+  final private T[] bag; //physical size is bag.length
+  private int size; //logical size
   private boolean initialized;
 
   public ArrayBag(){
